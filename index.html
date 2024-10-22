@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a <br><span>Random Password</span></br></h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password" readonly/>
+        <img src="copy.jpeg" alt="Copy icon" onclick="copyPassword()" />
+      </div>
+      <!-- Whenever we click on the button it will execute the function createPassword from JS file and generate a new random password -->
+      <button onclick="createPassword()">Generate Password</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
